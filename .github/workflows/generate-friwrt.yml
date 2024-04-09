@@ -80,7 +80,7 @@ env:
   ROOTFS_SQUASHFS: ${{ inputs.squashfs }}
   TUNNEL: ${{ inputs.tunnel }}
   CLEAN: ${{ inputs.clean }}
-  TZ: Asia/Jakarta
+  TZ: America/Los_Angeles
   PRE_RELEASE: ${{ inputs.upload-prerelease }}
   REVISION_TAG: ${{ inputs.revision-tag }}
 
@@ -301,7 +301,7 @@ jobs:
             ${{ steps.changelog.outputs.CHANGELOG }}
             
             See [here](https://github.com/frizkyiman/friWrt-MyWrtBuilder?tab=readme-ov-file#firmware-details) for more detail feature and other information.
-            - Default IP: 192.168.1.1
+            - Default IP: 192.168.1.111
             - Default username: root
             - Default password: friwrt
             - Default WIFI name: friWrt_2g | friWrt_5g (if device supported)
